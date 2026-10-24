@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A demo apparel and textiles online store.">
+  <title>Thread & Loom | Apparel Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#">THREAD<span>&</span>LOOM</a>
+    <nav aria-label="Main navigation">
+      <a href="#shop">Shop</a>
+      <a href="#story">Our Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-button" id="cart-toggle" aria-label="Open shopping cart">Cart (<span id="cart-count">0</span>)</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">NEW SEASON · EVERYDAY ESSENTIALS</p>
+        <h1>Wear what<br><em>feels like you.</em></h1>
+        <p>Thoughtful styles, comfortable fabrics, and everyday pieces made to fit your life.</p>
+        <a class="primary-button" href="#shop">Explore collection</a>
+      </div>
+      <div class="hero-art" aria-label="Abstract clothing-inspired illustration">
+        <div class="sun"></div><div class="fabric fabric-one"></div><div class="fabric fabric-two"></div>
+        <span>MADE FOR<br>YOUR EVERYDAY</span>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Store benefits">
+      <div><strong>Comfort first</strong><span>Everyday-friendly styles</span></div>
+      <div><strong>Easy shopping</strong><span>Simple product discovery</span></div>
+      <div><strong>Thoughtful details</strong><span>Fabric and fit information</span></div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE COLLECTION</p><h2>Find your favourites</h2></div>
+        <p>Demo products for an apparel and textiles store.</p>
+      </div>
+      <div class="shop-controls">
+        <label class="search-label" for="search-input">Search products</label>
+        <input id="search-input" type="search" placeholder="Try 'shirt' or 'cotton'">
+        <label class="visually-hidden" for="category-filter">Filter by category</label>
+        <select id="category-filter">
+          <option value="all">All categories</option>
+          <option value="Tops">Tops</option>
+          <option value="Bottoms">Bottoms</option>
+          <option value="Textiles">Textiles</option>
+        </select>
+      </div>
+      <p class="result-count" id="result-count" aria-live="polite"></p>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-mark">T&L</div>
+      <div><p class="eyebrow">OUR STORY</p><h2>Good design starts with the details.</h2>
+      <p>Thread & Loom is a sample online store concept focused on making apparel and textile shopping simple. Each demo listing includes a category, price, and fabric note so customers can make more informed choices.</p></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <p class="eyebrow">STAY IN THE LOOP</p><h2>Style notes, occasionally.</h2>
+      <p>This is a front-end demo. The form shows a confirmation but does not send data to a server.</p>
+      <form id="newsletter-form"><label class="visually-hidden" for="email">Email address</label><input id="email" type="email" placeholder="Your email address" required><button class="primary-button" type="submit">Join the list</button></form>
+      <p id="newsletter-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <aside class="cart-panel" id="cart-panel" aria-label="Shopping cart" hidden>
+    <div class="cart-heading"><h2>Your cart</h2><button id="cart-close" aria-label="Close cart">×</button></div>
+    <div id="cart-items"></div>
+    <div class="cart-total">Total <strong id="cart-total">₹0</strong></div>
+    <button class="primary-button checkout-button" id="checkout-button">Demo checkout</button>
+    <p class="small-note">Demo only: no payment is collected.</p>
+    <p id="checkout-message" aria-live="polite"></p>
+  </aside>
+  <div class="overlay" id="overlay" hidden></div>
+
+  <footer><a class="logo" href="#">THREAD<span>&</span>LOOM</a><p>Student project demo · Apparel & Textiles E-Commerce Website</p><p>© <span id="year"></span> Thread & Loom</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
